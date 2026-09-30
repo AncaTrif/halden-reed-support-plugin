@@ -1,0 +1,87 @@
+# Expected triage outcomes for the 12 seeded tickets.
+# Used by the eval harness (step 9). Risk tiers: routine, standard, elevated, critical.
+# owner values match the Slack channels in docs/slack-setup.md.
+
+- id: HR-1001
+  market: UK
+  risk_tier: critical
+  owner: product-quality
+  escalate: true
+  notes: Suspected tampering plus skin reaction. Customer keeps the bottle. Draft must not guess at cause or promise compensation. Ask for batch code and photos, advise stopping use.
+
+- id: HR-1002
+  market: DE
+  risk_tier: standard
+  owner: tier2-queue
+  escalate: false
+  notes: Return request past the window (day 41). Statutory withdrawal period has passed, goodwill is a Tier 2 decision. Reply in German.
+
+- id: HR-1003
+  market: UK
+  risk_tier: elevated
+  owner: finance
+  escalate: true
+  notes: Chargeback with a 7 day response window. Proof of delivery exists. Finance owns the response. Do not contact the customer before Finance decides.
+
+- id: HR-1004
+  market: DE
+  risk_tier: elevated
+  owner: legal-gdpr
+  escalate: true
+  notes: Art. 17 erasure request. Statutory response clock of one month from receipt. Do not confirm deletion in the reply, acknowledge receipt only. Reply in German.
+
+- id: HR-1005
+  market: US
+  risk_tier: elevated
+  owner: comms
+  escalate: true
+  notes: Press enquiry with a Friday deadline. Support must not comment on safety or sales figures. Link to HR-1008 (same product, possible pattern) for Product Quality.
+
+- id: HR-1006
+  market: UK
+  risk_tier: elevated
+  owner: tier2-queue
+  escalate: false
+  notes: Third contact on a delayed order, hard deadline (Friday). Needs a personal reply and a carrier check, not a template. Offer refund path if delivery cannot be guaranteed.
+
+- id: HR-1007
+  market: DE
+  risk_tier: standard
+  owner: tier2-queue
+  escalate: false
+  notes: Double charge plus high-value loyal customer. Priority handling, personal tone. Refund confirmation needs Finance check on the payment record. Reply in German.
+
+- id: HR-1008
+  market: US
+  risk_tier: critical
+  owner: product-quality
+  escalate: true
+  notes: Injury report on a product (burn). Same product as HR-1005. Draft must not admit fault or speculate on cause. Ask for photos and product serial, advise stopping use.
+
+- id: HR-1009
+  market: DE
+  risk_tier: routine
+  owner: tier2-queue
+  escalate: false
+  notes: Tracking stall, one day. Routine reply, no escalation. Reply in German.
+
+- id: HR-1010
+  market: UK
+  risk_tier: routine
+  owner: tier2-queue
+  escalate: false
+  notes: Address change on an unshipped order. Routine. Verify the order has not shipped before confirming.
+
+- id: HR-1011
+  market: US
+  risk_tier: routine
+  owner: tier2-queue
+  escalate: false
+  notes: Product care question. Routine. Answer from the product manual, no escalation.
+
+- id: HR-1012
+  market: US
+  risk_tier: elevated
+  owner: legal-gdpr
+  escalate: true
+  notes: Explicit legal threat plus social media threat, warranty wording dispute. Route to Legal, flag Comms as secondary. Draft must not argue the warranty terms or admit the wording is misleading.
