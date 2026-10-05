@@ -35,3 +35,12 @@ Ask Claude Code to list the channels and read the last message in `#hr-tier2-que
 ## Notes for the write-up
 
 Record what you had to decide here (which server, which scopes, why). Those decisions are portfolio material.
+
+## Findings and decisions (step 1)
+
+- The Slack MCP server offers 27 tools, and it does include posting (`slack_send_message`). Option A and B in section 2 are not needed.
+- Only 4 tools are usable in this project, on purpose. `.claude/settings.json` allows `slack_search_channels`, asks before each `slack_send_message`, `slack_read_channel` and `slack_read_thread`, and denies the other 23 tools.
+- Why: nothing customer-facing is sent automatically and a human decides. The permission prompt on `slack_send_message` is the review step. The draft tool, scheduling, user lookup and user profiles are denied. Search across messages is denied too, so personal data stays out of reach.
+- `/mcp` shows 27 tools for the server. That is expected and does not mean the deny list failed. A shorter tool list inside a session is the deny list working, not a disconnect.
+- Changing the deny list changes what Claude can do in Slack, so it goes through a pull request.
+- All five channels exist and are readable. `#hr-tier2-queue` has one setup check post. Posting from a real command is verified in step 3.
