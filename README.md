@@ -39,4 +39,4 @@ CLAUDE.md       conventions Claude Code reads at session start
 
 ## Status
 
-Step 1 done, pending pull request. Next: step 2, the triage skill.
+Step 1 done and merged. Step 2 (triage skill) in progress.
