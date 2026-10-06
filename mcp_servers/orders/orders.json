@@ -1,0 +1,145 @@
+{
+  "_note": "Fictional data. No customer names, emails or addresses. Keyed by order ID.",
+  "HR-UK-55102": {
+    "order_id": "HR-UK-55102", "market": "UK", "currency": "GBP",
+    "placed_at": "2026-09-08T10:15:00Z", "status": "delivered",
+    "items": [{"sku": "LUM-SER-30", "name": "Lumen Repair Serum 30 ml", "qty": 1, "unit_price": 48.00, "lot_code": "LRS-2606-B17"}],
+    "shipping_cost": 0.00, "total": 48.00,
+    "shipment": {"carrier": "Northline", "shipped_at": "2026-09-09T09:00:00Z", "delivered_at": "2026-09-11T13:40:00Z", "promised_delivery": "2026-09-12",
+      "proof_of_delivery": {"available": true, "note": "Photo at front door"},
+      "tracking": [
+        {"at": "2026-09-09T09:00:00Z", "event": "Picked up"},
+        {"at": "2026-09-11T13:40:00Z", "event": "Delivered"}]},
+    "payments": [{"reference": "PAY-UK-55102", "type": "capture", "amount": 48.00, "status": "captured", "at": "2026-09-08T10:16:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-DE-77310": {
+    "order_id": "HR-DE-77310", "market": "DE", "currency": "EUR",
+    "placed_at": "2026-08-04T08:30:00Z", "status": "delivered",
+    "items": [{"sku": "AUR-17", "name": "Wasserkocher Aura 1.7", "qty": 1, "unit_price": 79.90, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 79.90,
+    "shipment": {"carrier": "Nordpost", "shipped_at": "2026-08-05T10:00:00Z", "delivered_at": "2026-08-07T15:10:00Z", "promised_delivery": "2026-08-08",
+      "proof_of_delivery": {"available": true, "note": "Signature"},
+      "tracking": [
+        {"at": "2026-08-05T10:00:00Z", "event": "Picked up"},
+        {"at": "2026-08-07T15:10:00Z", "event": "Delivered"}]},
+    "payments": [{"reference": "PAY-DE-77310", "type": "capture", "amount": 79.90, "status": "captured", "at": "2026-08-04T08:31:00Z"}],
+    "loyalty_tier": "silver", "address_change_allowed": false
+  },
+  "HR-UK-55877": {
+    "order_id": "HR-UK-55877", "market": "UK", "currency": "GBP",
+    "placed_at": "2026-08-30T17:20:00Z", "status": "delivered",
+    "items": [{"sku": "BRI-FL-01", "name": "Brindle Floor Lamp", "qty": 1, "unit_price": 189.00, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 189.00,
+    "shipment": {"carrier": "Northline", "shipped_at": "2026-09-01T08:00:00Z", "delivered_at": "2026-09-02T11:25:00Z", "promised_delivery": "2026-09-03",
+      "proof_of_delivery": {"available": true, "note": "Photo at front porch"},
+      "tracking": [
+        {"at": "2026-09-01T08:00:00Z", "event": "Picked up"},
+        {"at": "2026-09-02T11:25:00Z", "event": "Delivered"}]},
+    "payments": [
+      {"reference": "PAY-UK-55877", "type": "capture", "amount": 189.00, "status": "captured", "at": "2026-08-30T17:21:00Z"},
+      {"reference": "CB-UK-55877", "type": "chargeback", "amount": 189.00, "status": "open", "reason": "goods_not_received", "at": "2026-09-15T07:00:00Z", "response_due": "2026-09-22"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-DE-77455": {
+    "order_id": "HR-DE-77455", "market": "DE", "currency": "EUR",
+    "placed_at": "2026-07-20T12:00:00Z", "status": "delivered",
+    "items": [{"sku": "LUM-HC-75", "name": "Lumen Handcreme 75 ml", "qty": 2, "unit_price": 27.25, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 54.50,
+    "shipment": {"carrier": "Nordpost", "shipped_at": "2026-07-21T09:30:00Z", "delivered_at": "2026-07-23T10:05:00Z", "promised_delivery": "2026-07-24",
+      "proof_of_delivery": {"available": true, "note": "Signature"},
+      "tracking": [
+        {"at": "2026-07-21T09:30:00Z", "event": "Picked up"},
+        {"at": "2026-07-23T10:05:00Z", "event": "Delivered"}]},
+    "payments": [{"reference": "PAY-DE-77455", "type": "capture", "amount": 54.50, "status": "captured", "at": "2026-07-20T12:01:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-UK-55340": {
+    "order_id": "HR-UK-55340", "market": "UK", "currency": "GBP",
+    "placed_at": "2026-08-27T19:45:00Z", "status": "in_transit",
+    "items": [{"sku": "BRI-TS-06", "name": "Brindle Tea Set, 6 cups", "qty": 1, "unit_price": 129.00, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 129.00,
+    "shipment": {"carrier": "Northline", "shipped_at": "2026-08-29T09:10:00Z", "delivered_at": null, "promised_delivery": "2026-09-03",
+      "proof_of_delivery": {"available": false, "note": null},
+      "tracking": [
+        {"at": "2026-08-29T09:10:00Z", "event": "Picked up"},
+        {"at": "2026-09-01T06:30:00Z", "event": "Arrived at regional depot"},
+        {"at": "2026-09-05T14:00:00Z", "event": "Delayed, new delivery date not set"}]},
+    "payments": [{"reference": "PAY-UK-55340", "type": "capture", "amount": 129.00, "status": "captured", "at": "2026-08-27T19:46:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-DE-77602": {
+    "order_id": "HR-DE-77602", "market": "DE", "currency": "EUR",
+    "placed_at": "2026-09-16T07:50:00Z", "status": "processing",
+    "items": [{"sku": "LIN-CM-02", "name": "Linden Kaffeemaschine", "qty": 1, "unit_price": 264.90, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 264.90,
+    "shipment": {"carrier": null, "shipped_at": null, "delivered_at": null, "promised_delivery": "2026-09-19",
+      "proof_of_delivery": {"available": false, "note": null}, "tracking": []},
+    "payments": [
+      {"reference": "PAY-DE-77602-A", "type": "capture", "amount": 264.90, "status": "captured", "at": "2026-09-16T07:51:00Z"},
+      {"reference": "PAY-DE-77602-B", "type": "capture", "amount": 264.90, "status": "captured", "at": "2026-09-16T07:51:40Z"}],
+    "loyalty_tier": "gold", "address_change_allowed": true
+  },
+  "HR-US-90231": {
+    "order_id": "HR-US-90231", "market": "US", "currency": "USD",
+    "placed_at": "2026-08-13T14:05:00Z", "status": "delivered",
+    "items": [{"sku": "AUR-17", "name": "Aura 1.7 Kettle", "qty": 1, "unit_price": 89.00, "lot_code": "AUR-2605-K42"}],
+    "shipping_cost": 0.00, "total": 89.00,
+    "shipment": {"carrier": "Redline Freight", "shipped_at": "2026-08-14T12:00:00Z", "delivered_at": "2026-08-18T16:30:00Z", "promised_delivery": "2026-08-19",
+      "proof_of_delivery": {"available": true, "note": "Photo at front door"},
+      "tracking": [
+        {"at": "2026-08-14T12:00:00Z", "event": "Picked up"},
+        {"at": "2026-08-18T16:30:00Z", "event": "Delivered"}]},
+    "payments": [{"reference": "PAY-US-90231", "type": "capture", "amount": 89.00, "status": "captured", "at": "2026-08-13T14:06:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-DE-77690": {
+    "order_id": "HR-DE-77690", "market": "DE", "currency": "EUR",
+    "placed_at": "2026-09-15T09:00:00Z", "status": "in_transit",
+    "items": [{"sku": "LUM-BO-200", "name": "Lumen Körperöl 200 ml", "qty": 1, "unit_price": 36.00, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 36.00,
+    "shipment": {"carrier": "Nordpost", "shipped_at": "2026-09-16T10:30:00Z", "delivered_at": null, "promised_delivery": "2026-09-20",
+      "proof_of_delivery": {"available": false, "note": null},
+      "tracking": [
+        {"at": "2026-09-16T10:30:00Z", "event": "Picked up"},
+        {"at": "2026-09-17T18:20:00Z", "event": "Arrived at parcel centre"}]},
+    "payments": [{"reference": "PAY-DE-77690", "type": "capture", "amount": 36.00, "status": "captured", "at": "2026-09-15T09:01:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-UK-55921": {
+    "order_id": "HR-UK-55921", "market": "UK", "currency": "GBP",
+    "placed_at": "2026-09-18T08:05:00Z", "status": "processing",
+    "items": [{"sku": "BRI-TL-03", "name": "Brindle Table Lamp", "qty": 1, "unit_price": 62.00, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 62.00,
+    "shipment": {"carrier": null, "shipped_at": null, "delivered_at": null, "promised_delivery": "2026-09-22",
+      "proof_of_delivery": {"available": false, "note": null}, "tracking": []},
+    "payments": [{"reference": "PAY-UK-55921", "type": "capture", "amount": 62.00, "status": "captured", "at": "2026-09-18T08:06:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": true
+  },
+  "HR-US-90310": {
+    "order_id": "HR-US-90310", "market": "US", "currency": "USD",
+    "placed_at": "2025-09-20T11:00:00Z", "status": "delivered",
+    "items": [{"sku": "AUR-17", "name": "Aura 1.7 Kettle", "qty": 1, "unit_price": 89.00, "lot_code": "AUR-2503-K11"}],
+    "shipping_cost": 0.00, "total": 89.00,
+    "shipment": {"carrier": "Redline Freight", "shipped_at": "2025-09-21T12:00:00Z", "delivered_at": "2025-09-25T14:00:00Z", "promised_delivery": "2025-09-26",
+      "proof_of_delivery": {"available": true, "note": "Photo at front door"},
+      "tracking": [
+        {"at": "2025-09-21T12:00:00Z", "event": "Picked up"},
+        {"at": "2025-09-25T14:00:00Z", "event": "Delivered"}]},
+    "payments": [{"reference": "PAY-US-90310", "type": "capture", "amount": 89.00, "status": "captured", "at": "2025-09-20T11:01:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  },
+  "HR-US-90144": {
+    "order_id": "HR-US-90144", "market": "US", "currency": "USD",
+    "placed_at": "2025-07-15T13:30:00Z", "status": "delivered",
+    "items": [{"sku": "HAL-SM-5Q", "name": "Halden Stand Mixer 5 qt", "qty": 1, "unit_price": 349.00, "lot_code": null}],
+    "shipping_cost": 0.00, "total": 349.00,
+    "shipment": {"carrier": "Redline Freight", "shipped_at": "2025-07-16T12:00:00Z", "delivered_at": "2025-07-19T15:45:00Z", "promised_delivery": "2025-07-20",
+      "proof_of_delivery": {"available": true, "note": "Signature"},
+      "tracking": [
+        {"at": "2025-07-16T12:00:00Z", "event": "Picked up"},
+        {"at": "2025-07-19T15:45:00Z", "event": "Delivered"}]},
+    "payments": [{"reference": "PAY-US-90144", "type": "capture", "amount": 349.00, "status": "captured", "at": "2025-07-15T13:31:00Z"}],
+    "loyalty_tier": "none", "address_change_allowed": false
+  }
+}

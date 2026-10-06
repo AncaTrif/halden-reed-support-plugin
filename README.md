@@ -34,9 +34,12 @@ It is a portfolio build that shows, in one place:
 tickets/        12 seeded tickets (markdown with front matter)
 evals/          expected outcomes per ticket, used by the eval harness later
 docs/           setup guides
+mcp_servers/    custom MCP servers (orders, step 5)
+hooks/          hook scripts (step 4)
+cases/          structured case files from the triage skill
 CLAUDE.md       conventions Claude Code reads at session start
 ```
 
 ## Status
 
-Steps 1 to 3 done and merged. Step 4 (hooks) in progress.
+Steps 1 to 4 done and merged. Step 5 (orders MCP server) in progress.
