@@ -25,7 +25,7 @@ The first word is the ticket ID (`HR-1001` to `HR-1012`). If `--dry-run` is pres
 
    Use `none` for empty fields. Use ticket IDs and order IDs only.
 
-4. Personal data check. Read the `customer` and `customer_email` lines from the ticket front matter. The message must not contain the email, the customer's name or any part of it, or any address from the ticket body. If it does, remove it and check again. If you cannot remove it, stop and report.
+4. Personal data check (a hook in `hooks/redact_slack.py` also blocks the post if this check misses something). Read the `customer` and `customer_email` lines from the ticket front matter. The message must not contain the email, the customer's name or any part of it, or any address from the ticket body. If it does, remove it and check again. If you cannot remove it, stop and report.
 5. Pick the channel by owner:
 
    | owner | channel |
