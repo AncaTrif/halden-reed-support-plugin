@@ -39,4 +39,4 @@ CLAUDE.md       conventions Claude Code reads at session start
 
 ## Status
 
-Steps 1 and 2 done and merged. Step 3 (/triage-ticket command) in progress.
+Steps 1 to 3 done and merged. Step 4 (hooks) in progress.
