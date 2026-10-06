@@ -23,7 +23,8 @@
   },
   "permissions": {
     "allow": [
-      "mcp__slack__slack_search_channels"
+      "mcp__slack__slack_search_channels",
+      "mcp__orders__get_order"
     ],
     "ask": [
       "mcp__slack__slack_send_message",
