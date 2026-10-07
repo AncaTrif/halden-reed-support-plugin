@@ -5,7 +5,7 @@ description: Triage one Halden & Reed support ticket into a structured case file
 
 # Triage a ticket into a case file
 
-Input: a ticket ID such as `HR-1001`. Read `tickets/<ID>.md`.
+Input: a ticket ID such as `HR-1001`. The ticket lives in Zoho Desk, see "Fetching the ticket".
 Output: `cases/<ID>.md`, a markdown file with YAML front matter. Nothing is sent anywhere. A human decides and sends.
 
 ## Ground rules
@@ -15,6 +15,10 @@ Output: `cases/<ID>.md`, a markdown file with YAML front matter. Nothing is sent
 - Set `reply_language` from the ticket `language`. Case files themselves are written in English.
 - Do not decide outcomes (refund, goodwill, deletion, fault). Triage says who owns the case, how urgent it is and what the reply must not do.
 - No em dashes in written text.
+
+## Fetching the ticket
+
+Fetch the ticket from Zoho Desk. Call `searchTickets` with `query_params` `{"subject": "<ID>", "limit": 5}` and pick the result whose subject starts with `[<ID>]`. If there is none, stop and say the ticket was not found. The description starts with a header block, one `Key: value` line each for Market, Language, Order, Received and Source channel, ended by a blank line. Everything after the blank line is the customer's message. The customer's name is `contact.firstName` and `contact.lastName`. Zoho's own `createdTime` is when the ticket was seeded, so use the Received line as the received date. `contact.email` is personal data: never copy it into a case file, a note or a draft.
 
 ## Fields
 
@@ -64,7 +68,7 @@ Secondary owner rules:
 
 ## Deadlines
 
-Take an explicit deadline from the ticket or a statutory or scheme clock. Compute an absolute date from the ticket `received` timestamp and say how you got it in `deadline_basis`. Weekday names resolve to the first such day on or after `received`. If a time zone is given, keep it in the basis. Statutory clocks:
+Take an explicit deadline from the ticket or a statutory or scheme clock. Compute an absolute date from the ticket's Received date and say how you got it in `deadline_basis`. Weekday names resolve to the first such day on or after `received`. If a time zone is given, keep it in the basis. Statutory clocks:
 
 - Data subject request (GDPR Art. 12 and 17): one month from receipt.
 - Chargeback: the response window stated in the notice, counted from receipt.
@@ -73,7 +77,7 @@ If there is no deadline, set `deadline: none` and `deadline_basis: none`. Do not
 
 ## Links between tickets
 
-For safety reports and press enquiries about safety, search `tickets/` for the same product name. Link only tickets that report a similar safety concern about that product, not every ticket that mentions it. Add the IDs to `linked_tickets` on both cases and add the flag `possible-pattern`. Do not link on customer name alone.
+For safety reports and press enquiries about safety, search Zoho for the same product name (`searchTickets` with the `description` parameter). Link only tickets that report a similar safety concern about that product, not every ticket that mentions it. Add the IDs to `linked_tickets` on both cases and add the flag `possible-pattern`. Do not link on customer name alone.
 
 ## Flags
 
@@ -96,8 +100,8 @@ List facts the human needs that the ticket does not contain, such as batch code,
 
 ## Steps
 
-1. Read `tickets/<ID>.md`.
-2. If the case is a safety report or press enquiry, search `tickets/` for the same product name.
+1. Fetch the ticket from Zoho Desk.
+2. If the case is a safety report or press enquiry, search Zoho for the same product name.
 3. Decide tier, owner, secondary owner, deadline and flags using the rules above.
 4. Write `cases/<ID>.md`.
 5. Report the tier, owner and deadline in one line. Do not post to Slack. Posting belongs to the `/triage-ticket` command in step 3.

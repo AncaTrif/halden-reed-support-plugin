@@ -11,6 +11,7 @@ SEND_TOOLS = {
     "mcp__claude_ai_Gmail__send_message",
     "mcp__claude_ai_Gmail__reply",
     "mcp__claude_ai_Gmail__forward",
+    "mcp__zoho__ZohoDesk_sendReply",
 }
 
 

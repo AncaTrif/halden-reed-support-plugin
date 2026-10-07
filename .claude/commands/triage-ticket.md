@@ -9,7 +9,7 @@ The first word is the ticket ID (`HR-1001` to `HR-1012`). If `--dry-run` is pres
 
 ## Steps
 
-1. Check that `tickets/<ID>.md` exists. If not, stop and say so.
+1. Check that the ticket exists in Zoho Desk: call `searchTickets` with `query_params` `{"subject": "<ID>", "limit": 5}` and look for a result whose subject starts with `[<ID>]`. If there is none, stop and say so.
 2. If `cases/<ID>.md` does not exist, run the `triage` skill for that ticket. If it exists, read it and use it as is. Do not re-triage unless the user asks.
 3. Build the Slack summary from the case file front matter and the Constraints section, using this template:
 
@@ -25,7 +25,7 @@ The first word is the ticket ID (`HR-1001` to `HR-1012`). If `--dry-run` is pres
 
    Use `none` for empty fields. Use ticket IDs and order IDs only.
 
-4. Personal data check (a hook in `hooks/redact_slack.py` also blocks the post if this check misses something). Read the `customer` and `customer_email` lines from the ticket front matter. The message must not contain the email, the customer's name or any part of it, or any address from the ticket body. If it does, remove it and check again. If you cannot remove it, stop and report.
+4. Personal data check (a hook in `hooks/redact_slack.py` also blocks the post if this check misses something). Take the customer's name (`contact.firstName`, `contact.lastName`) and `contact.email` from the Zoho result of step 1. The message must not contain the email, the customer's name or any part of it, or any address from the ticket text. If it does, remove it and check again. If you cannot remove it, stop and report.
 5. Pick the channel by owner:
 
    | owner | channel |
