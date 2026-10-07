@@ -44,4 +44,4 @@ CLAUDE.md       conventions Claude Code reads at session start
 
 ## Status
 
-Steps 1 to 5 done and merged. Step 6 (drafter and reviewer subagents, market policy) in progress.
+Steps 1 to 6 done and merged. Step 7 (Zoho Desk MCP) in progress.

@@ -9,7 +9,7 @@ Nothing customer-facing is ever sent. This command saves a local draft in `draft
 
 ## Steps
 
-1. Check that `tickets/<ID>.md` exists. If not, stop and say so.
+1. Check that the ticket exists in Zoho Desk: call `searchTickets` with `query_params` `{"subject": "<ID>", "limit": 5}` and look for a result whose subject starts with `[<ID>]`. If there is none, stop and say so.
 2. If `cases/<ID>.md` does not exist, run the `triage` skill for that ticket first.
 3. Call the `drafter` subagent with the ticket ID. Keep its output as `draft_v1`.
 4. Call the `reviewer` subagent with the ticket ID and the full draft text.
@@ -33,5 +33,5 @@ Nothing customer-facing is ever sent. This command saves a local draft in `draft
 ## Never
 
 - Never send, post or schedule anything. Never use Slack or Gmail tools in this command.
-- Never edit files under `policy/`, `cases/` or `tickets/`.
+- Never edit files under `policy/` or `cases/`, and never change anything in Zoho Desk.
 - Never put customer names, emails or addresses in anything except the customer-facing draft text.
