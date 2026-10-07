@@ -2,7 +2,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "mcp__claude_ai_Gmail__(send_message|reply|forward)",
+        "matcher": "mcp__claude_ai_Gmail__(send_message|reply|forward)|mcp__zoho__ZohoDesk_sendReply",
         "hooks": [
           {
             "type": "command",
@@ -25,7 +25,12 @@
     "allow": [
       "mcp__slack__slack_search_channels",
       "mcp__orders__get_order",
-      "Write(drafts/**)"
+      "Write(drafts/**)",
+      "mcp__zoho__ZohoDesk_getTicket",
+      "mcp__zoho__ZohoDesk_getTickets",
+      "mcp__zoho__ZohoDesk_searchTickets",
+      "mcp__zoho__ZohoDesk_getTicketConversations",
+      "mcp__zoho__ZohoDesk_getContact"
     ],
     "ask": [
       "mcp__slack__slack_send_message",
@@ -55,7 +60,32 @@
       "mcp__slack__slack_send_message_draft",
       "mcp__slack__slack_update_canvas",
       "mcp__slack__slack_update_list",
-      "mcp__slack__slack_update_list_record"
+      "mcp__slack__slack_update_list_record",
+      "mcp__zoho__ZohoDesk_sendReply",
+      "mcp__zoho__ZohoDesk_draftsReply",
+      "mcp__zoho__ZohoDesk_sendForReview",
+      "mcp__zoho__ZohoDesk_createTicket",
+      "mcp__zoho__ZohoDesk_updateTicket",
+      "mcp__zoho__ZohoDesk_updateManyTickets",
+      "mcp__zoho__ZohoDesk_bulkUpdateTickets",
+      "mcp__zoho__ZohoDesk_deleteTicket",
+      "mcp__zoho__ZohoDesk_deleteSpamTickets",
+      "mcp__zoho__ZohoDesk_deleteAllSpamTickets",
+      "mcp__zoho__ZohoDesk_createTicketComment",
+      "mcp__zoho__ZohoDesk_updateTicketComment",
+      "mcp__zoho__ZohoDesk_deleteTicketComment",
+      "mcp__zoho__ZohoDesk_moveTicket",
+      "mcp__zoho__ZohoDesk_mergeTicket",
+      "mcp__zoho__ZohoDesk_mergeTickets",
+      "mcp__zoho__ZohoDesk_splitTicket",
+      "mcp__zoho__ZohoDesk_closeTickets",
+      "mcp__zoho__ZohoDesk_markTicketAsSpam",
+      "mcp__zoho__ZohoDesk_createContact",
+      "mcp__zoho__ZohoDesk_updateContact",
+      "mcp__zoho__ZohoDesk_deleteContact",
+      "mcp__zoho__ZohoDesk_addAgent",
+      "mcp__zoho__ZohoDesk_updateAgent",
+      "mcp__zoho__ZohoDesk_deactivateAgents"
     ]
   }
 }

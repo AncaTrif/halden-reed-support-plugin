@@ -31,6 +31,8 @@ CASES = [
     ("send blocks gmail send_message", "block_customer_send.py", {"tool_name": "mcp__claude_ai_Gmail__send_message"}, 2),
     ("send blocks gmail reply", "block_customer_send.py", {"tool_name": "mcp__claude_ai_Gmail__reply"}, 2),
     ("send blocks gmail forward", "block_customer_send.py", {"tool_name": "mcp__claude_ai_Gmail__forward"}, 2),
+    ("send blocks zoho sendReply", "block_customer_send.py", {"tool_name": "mcp__zoho__ZohoDesk_sendReply"}, 2),
+    ("send allows zoho getTicket", "block_customer_send.py", {"tool_name": "mcp__zoho__ZohoDesk_getTicket"}, 0),
     ("send allows gmail create_draft", "block_customer_send.py", {"tool_name": "mcp__claude_ai_Gmail__create_draft"}, 0),
     ("send allows gmail search", "block_customer_send.py", {"tool_name": "mcp__claude_ai_Gmail__search_threads"}, 0),
     ("redact passes clean message", "redact_slack.py", slack(CLEAN), 0),
