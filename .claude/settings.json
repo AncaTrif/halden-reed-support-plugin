@@ -24,7 +24,8 @@
   "permissions": {
     "allow": [
       "mcp__slack__slack_search_channels",
-      "mcp__orders__get_order"
+      "mcp__orders__get_order",
+      "Write(drafts/**)"
     ],
     "ask": [
       "mcp__slack__slack_send_message",

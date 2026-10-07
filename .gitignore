@@ -6,3 +6,5 @@ __pycache__/
 .DS_Store
 .claude/settings.local.json
 .venv/
+drafts/*
+!drafts/.gitkeep
