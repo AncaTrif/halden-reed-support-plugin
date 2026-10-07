@@ -37,9 +37,11 @@ docs/           setup guides
 mcp_servers/    custom MCP servers (orders, step 5)
 hooks/          hook scripts (step 4)
 cases/          structured case files from the triage skill
+policy/         market policy text (DE, UK, US), changed by pull request only
+drafts/         local reply drafts from /draft-reply (not committed)
 CLAUDE.md       conventions Claude Code reads at session start
 ```
 
 ## Status
 
-Steps 1 to 4 done and merged. Step 5 (orders MCP server) in progress.
+Steps 1 to 5 done and merged. Step 6 (drafter and reviewer subagents, market policy) in progress.
