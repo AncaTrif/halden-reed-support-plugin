@@ -1,0 +1,17 @@
+{
+  "name": "halden-reed",
+  "owner": {
+    "name": "AncaTrif"
+  },
+  "plugins": [
+    {
+      "name": "halden-reed-desk",
+      "source": "./",
+      "description": "Triage, drafting and review for the fictional Halden & Reed escalation desk. Drafts and internal notes only, a human sends.",
+      "version": "0.1.0"
+    }
+  ],
+  "metadata": {
+    "description": "Marketplace for the Halden & Reed escalation desk plugin. All data is fictional."
+  }
+}

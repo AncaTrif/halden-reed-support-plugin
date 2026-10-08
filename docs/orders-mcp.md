@@ -13,7 +13,8 @@ It holds no customer names, emails or addresses. Order IDs and facts only, so ca
 - `mcp_servers/orders/server.py`: the server (Python, official `mcp` SDK, stdio).
 - `mcp_servers/orders/orders.json`: 11 fictional orders, one for each ticket that has an order ID. HR-1005 has none.
 - `mcp_servers/orders/test_orders.py`: checks the data against the tickets and calls the server through a real MCP client.
-- `.mcp.json`: registers the server for this project.
+- `mcp/orders-server.json`: the server config. `.claude-plugin/plugin.json` points at it. It must not be a `.mcp.json` in the repo root, because Claude Code would then also start it as a plain project server, where `${CLAUDE_PLUGIN_ROOT}` has no value and the connection fails.
+- `scripts/run_orders_server.sh`: starts the server and builds its private Python environment on first run.
 - `.claude/settings.json`: `mcp__orders__get_order` is allowed. It is read-only.
 
 ## Set up

@@ -1,30 +1,8 @@
 {
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "mcp__claude_ai_Gmail__(send_message|reply|forward)|mcp__zoho__ZohoDesk_sendReply",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/hooks/block_customer_send.py\""
-          }
-        ]
-      },
-      {
-        "matcher": "mcp__slack__slack_send_message",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/hooks/redact_slack.py\""
-          }
-        ]
-      }
-    ]
-  },
   "permissions": {
     "allow": [
       "mcp__slack__slack_search_channels",
-      "mcp__orders__get_order",
+      "mcp__plugin_halden-reed-desk_orders__get_order",
       "Write(drafts/**)",
       "mcp__zoho__ZohoDesk_getTicket",
       "mcp__zoho__ZohoDesk_getTickets",

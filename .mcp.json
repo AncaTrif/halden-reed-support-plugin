@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "orders": {
-      "command": ".venv/bin/python",
-      "args": ["mcp_servers/orders/server.py"]
-    }
-  }
-}
