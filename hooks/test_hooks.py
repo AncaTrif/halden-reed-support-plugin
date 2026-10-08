@@ -55,7 +55,7 @@ CASES = [
     ("redact blocks phone", "redact_slack.py", slack(CLEAN + "\ncall +44 20 7946 0958"), 2),
     ("redact blocks street", "redact_slack.py", slack(CLEAN + "\nship to 14 Mill Lane"), 2),
     ("redact blocks other channel", "redact_slack.py", slack(CLEAN, channel="C000000000"), 2),
-    ("redact blocks DM user id", "redact_slack.py", slack(CLEAN, channel="U0BKW3QEBMJ"), 2),
+    ("redact blocks DM user id", "redact_slack.py", slack(CLEAN, channel="U0000000000"), 2),
     ("redact fails closed on bad input", "redact_slack.py", None, 2),
 ]
 
