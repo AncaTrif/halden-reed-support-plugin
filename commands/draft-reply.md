@@ -10,11 +10,11 @@ Nothing customer-facing is ever sent. This command saves a local draft in `draft
 ## Steps
 
 1. Check that the ticket exists in Zoho Desk: call `searchTickets` with `query_params` `{"subject": "<ID>", "limit": 5}` and look for a result whose subject starts with `[<ID>]`. If there is none, stop and say so.
-2. If `cases/<ID>.md` does not exist, run the `triage` skill for that ticket first.
-3. Call the `drafter` subagent with the ticket ID. Keep its output as `draft_v1`.
-4. Call the `reviewer` subagent with the ticket ID and the full draft text.
+2. If `cases/<ID>.md` does not exist, run the `halden-reed-desk:triage` skill for that ticket first.
+3. Call the `halden-reed-desk:drafter` subagent with the ticket ID. Keep its output as `draft_v1`.
+4. Call the `halden-reed-desk:reviewer` subagent with the ticket ID and the full draft text.
 5. If the verdict is PASS, go to step 7.
-6. If the verdict is FAIL, call the `drafter` once more with the ticket ID and the reviewer's issues. Call the `reviewer` again on the new draft. This is the only revision round. Do not loop again.
+6. If the verdict is FAIL, call `halden-reed-desk:drafter` once more with the ticket ID and the reviewer's issues. Call `halden-reed-desk:reviewer` again on the new draft. This is the only revision round. Do not loop again.
 7. Save the result to `drafts/<ID>.md` with this front matter, then the drafter's text:
 
    ```

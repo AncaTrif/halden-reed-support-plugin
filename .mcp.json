@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "orders": {
-      "command": ".venv/bin/python",
-      "args": ["mcp_servers/orders/server.py"]
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/run_orders_server.sh"]
     }
   }
 }

@@ -15,13 +15,7 @@ import re
 import sys
 from pathlib import Path
 
-ALLOWED_CHANNELS = {
-    "C0C6SJ82C8G": "#hr-product-quality",
-    "C0C5SU0TV4M": "#hr-legal-gdpr",
-    "C0C5SU29HS9": "#hr-finance",
-    "C0C5Y340GQJ": "#hr-comms",
-    "C0C6SJ57FH6": "#hr-tier2-queue",
-}
+CHANNELS_FILE = Path(__file__).resolve().parent / "slack_channels.json"
 TITLES = {"dr", "mr", "mrs", "ms", "prof"}
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
 PHONE = re.compile(r"\+\d[\d ()-]{7,}\d|\(\d{2,5}\)\s?\d{3,}")
@@ -52,7 +46,8 @@ def customers(tickets_dir: Path):
 def check(tool_input: dict, tickets_dir: Path) -> list:
     problems = []
     channel = tool_input.get("channel_id", "")
-    if channel not in ALLOWED_CHANNELS:
+    allowed = {k for k in json.loads(CHANNELS_FILE.read_text(encoding="utf-8")) if not k.startswith("_")}
+    if channel not in allowed:
         problems.append("channel is not one of the five owner channels")
     text = tool_input.get("message", "")
     low = text.lower()

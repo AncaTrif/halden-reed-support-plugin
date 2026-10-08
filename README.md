@@ -31,11 +31,16 @@ It is a portfolio build that shows, in one place:
 ## Repo layout (grows step by step)
 
 ```
+.claude-plugin/ plugin manifest and marketplace file (step 8)
+commands/       /triage-ticket and /draft-reply
+agents/         drafter and reviewer subagents
+skills/         triage skill
+.mcp.json       orders MCP server, started by scripts/run_orders_server.sh
 tickets/        12 seeded tickets (markdown with front matter)
 evals/          expected outcomes per ticket, used by the eval harness later
 docs/           setup guides
 mcp_servers/    custom MCP servers (orders, step 5)
-hooks/          hook scripts (step 4)
+hooks/          hook scripts and hooks.json (steps 4 and 8)
 cases/          structured case files from the triage skill
 policy/         market policy text (DE, UK, US), changed by pull request only
 drafts/         local reply drafts from /draft-reply (not committed)
@@ -44,4 +49,4 @@ CLAUDE.md       conventions Claude Code reads at session start
 
 ## Status
 
-Steps 1 to 6 done and merged. Step 7 (Zoho Desk MCP) in progress.
+Steps 1 to 7 done and merged. Step 8 (plugin and marketplace file) in progress.

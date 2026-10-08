@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__.*",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/enforce_allowlist.py\"" }
+        ]
+      },
+      {
+        "matcher": "mcp__claude_ai_Gmail__(send_message|reply|forward)|mcp__zoho__ZohoDesk_sendReply",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/block_customer_send.py\"" }
+        ]
+      },
+      {
+        "matcher": "mcp__slack__slack_send_message",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/redact_slack.py\"" }
+        ]
+      }
+    ]
+  }
+}

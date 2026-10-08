@@ -1,0 +1,8 @@
+{
+  "_note": "Slack channel IDs the redaction hook allows posting to. These are the IDs of the author's test workspace. Replace them with the IDs of your own five owner channels.",
+  "C0C6SJ82C8G": "#hr-product-quality",
+  "C0C5SU0TV4M": "#hr-legal-gdpr",
+  "C0C5SU29HS9": "#hr-finance",
+  "C0C5Y340GQJ": "#hr-comms",
+  "C0C6SJ57FH6": "#hr-tier2-queue"
+}

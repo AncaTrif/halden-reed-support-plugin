@@ -1,0 +1,6 @@
+{
+  "name": "halden-reed-desk",
+  "version": "0.1.0",
+  "description": "Escalation desk for the fictional brand Halden & Reed: triage, drafting and review for Tier 2 support, with hooks that keep customer sends and personal data out. All data is fictional.",
+  "author": { "name": "AncaTrif" }
+}
