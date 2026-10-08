@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001006",
+        "ticketNumber": "106",
+        "subject": "[HR-1006] Third time asking, where is my order?",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91006",
+        "contact": {
+          "firstName": "Helen",
+          "lastName": "Marsh",
+          "email": "helen.marsh@example.org"
+        },
+        "description": "Market: UK\nLanguage: en\nOrder: HR-UK-55340\nReceived: 2026-09-16T15:48:00Z\nSource channel: chat\n\nThis is my THIRD message about order HR-UK-55340. It was meant to arrive on 3 September. Each time I have been told it is \"with the carrier\" and will arrive \"in 2 to 3 working days\". It is now 16 September.\n\nI bought this as a wedding gift and the wedding is on Saturday. If it does not arrive by Friday I want a full refund and I want someone to actually tell me what is going on. Please do not send me another template.\n\nHelen Marsh"
+      }
+    ],
+    "count": 1
+  }
+}

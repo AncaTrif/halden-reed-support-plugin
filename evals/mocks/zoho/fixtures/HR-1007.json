@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001007",
+        "ticketNumber": "107",
+        "subject": "[HR-1007] Doppelt abgebucht, und das nach 9 Jahren Kundschaft",
+        "channel": "Email",
+        "status": "Open",
+        "language": "German",
+        "contactId": "91007",
+        "contact": {
+          "firstName": "Dr. Annika",
+          "lastName": "Brandt",
+          "email": "annika.brandt@example.org"
+        },
+        "description": "Market: DE\nLanguage: de\nOrder: HR-DE-77602\nReceived: 2026-09-17T08:55:00Z\nSource channel: email\n\nSehr geehrtes Support-Team,\n\nauf meinem Konto wurde die Bestellung HR-DE-77602 (EUR 264,90) zweimal abgebucht. Ich bin seit neun Jahren Kundin, habe über 60 Bestellungen bei Ihnen aufgegeben und bin Mitglied im Treueprogramm Gold.\n\nIch erwarte eine persönliche Rückmeldung, keine Standardmail, und die Erstattung der Doppelbuchung innerhalb von zwei Werktagen. Ich empfehle Ihr Unternehmen seit Jahren weiter und würde das ungern ändern.\n\nMit freundlichen Grüßen\nDr. Annika Brandt"
+      }
+    ],
+    "count": 1
+  }
+}

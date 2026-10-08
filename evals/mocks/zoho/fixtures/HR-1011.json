@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001011",
+        "ticketNumber": "111",
+        "subject": "[HR-1011] How do I descale my kettle?",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91011",
+        "contact": {
+          "firstName": "Tom",
+          "lastName": "Reyes",
+          "email": "tom.reyes@example.com"
+        },
+        "description": "Market: US\nLanguage: en\nOrder: HR-US-90310\nReceived: 2026-09-18T12:20:00Z\nSource channel: email\n\nHi, I have had my Aura 1.7 kettle for about a year and there is white buildup inside. What is the recommended way to descale it, and how often should I do it? Thanks!\n\nTom"
+      }
+    ],
+    "count": 1
+  }
+}

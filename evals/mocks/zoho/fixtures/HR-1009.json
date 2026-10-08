@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001009",
+        "ticketNumber": "109",
+        "subject": "[HR-1009] Wo ist mein Paket?",
+        "channel": "Email",
+        "status": "Open",
+        "language": "German",
+        "contactId": "91009",
+        "contact": {
+          "firstName": "Sven",
+          "lastName": "Hartmann",
+          "email": "sven.hartmann@example.org"
+        },
+        "description": "Market: DE\nLanguage: de\nOrder: HR-DE-77690\nReceived: 2026-09-18T07:30:00Z\nSource channel: web form\n\nHallo,\n\nmeine Bestellung HR-DE-77690 wurde vorgestern versendet, aber die Sendungsverfolgung zeigt seit gestern nichts Neues. Können Sie mir sagen, wann das Paket ungefähr ankommt?\n\nDanke und Gruß\nSven Hartmann"
+      }
+    ],
+    "count": 1
+  }
+}

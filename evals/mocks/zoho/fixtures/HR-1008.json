@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001008",
+        "ticketNumber": "108",
+        "subject": "[HR-1008] Kettle base got extremely hot, burn on my hand",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91008",
+        "contact": {
+          "firstName": "Marcus",
+          "lastName": "Doyle",
+          "email": "marcus.doyle@example.com"
+        },
+        "description": "Market: US\nLanguage: en\nOrder: HR-US-90231\nReceived: 2026-09-17T11:10:00Z\nSource channel: phone transcript\n\nCall transcript summary: Customer reports that the base of his Aura 1.7 kettle became too hot to touch after about 10 minutes of use. When he lifted the kettle off the base, he touched the base and burned two fingers. He describes a red blister, no medical treatment sought yet. The kettle was bought 5 weeks ago. He still has the product and the packaging.\n\nHe asks for a refund and wants to know if this is a known problem. He said his sister has the same kettle and has noticed the same heat."
+      }
+    ],
+    "count": 1
+  }
+}

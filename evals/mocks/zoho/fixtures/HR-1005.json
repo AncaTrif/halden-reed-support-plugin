@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001005",
+        "ticketNumber": "105",
+        "subject": "[HR-1005] Request for comment, reports of overheating kettle bases",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91005",
+        "contact": {
+          "firstName": "Dana",
+          "lastName": "Whitfield",
+          "email": "d.whitfield@example.com"
+        },
+        "description": "Market: US\nLanguage: en\nOrder: none\nReceived: 2026-09-16T13:30:00Z\nSource channel: email\n\nHello,\n\nI am a reporter at Consumer Ledger working on a piece about small kitchen appliances. Several readers have told us that the base of the Aura 1.7 kettle became very hot during normal use. One reader sent photos of a scorched countertop.\n\nI would like to ask Halden & Reed: (1) Are you aware of complaints about the Aura 1.7 base overheating? (2) Has there been any recall or safety review? (3) How many units have been sold in the US?\n\nOur deadline is Friday at 5 pm Eastern. Thank you.\n\nDana Whitfield"
+      }
+    ],
+    "count": 1
+  }
+}

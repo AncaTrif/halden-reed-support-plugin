@@ -37,7 +37,8 @@ agents/         drafter and reviewer subagents
 skills/         triage skill
 mcp/            orders MCP server config for the plugin (started by scripts/run_orders_server.sh)
 tickets/        12 seeded tickets (markdown with front matter)
-evals/          expected outcomes per ticket, used by the eval harness later
+evals/          expected outcomes per ticket, plus the generated eval cases and mocks (step 9)
+.github/        CI workflows: free checks, and a manual paid eval run (step 9)
 docs/           setup guides
 mcp_servers/    custom MCP servers (orders, step 5)
 hooks/          hook scripts and hooks.json (steps 4 and 8)
@@ -49,4 +50,4 @@ CLAUDE.md       conventions Claude Code reads at session start
 
 ## Status
 
-Steps 1 to 7 done and merged. Step 8 (plugin and marketplace file) in progress.
+Steps 1 to 8 done and merged. Step 9 (eval harness and CI) documented, with one capped eval run and no full run. See docs/evals.md.
