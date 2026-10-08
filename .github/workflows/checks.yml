@@ -1,0 +1,30 @@
+# Free checks on every pull request. No API key, no model calls.
+name: checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  free-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Hook tests
+        run: python hooks/test_hooks.py
+      - name: Orders server tests
+        run: python mcp_servers/orders/test_orders.py
+      - name: Eval files are in sync with expected.yaml and tickets
+        run: python scripts/build_evals.py --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Validate the plugin and marketplace manifests
+        run: claude plugin validate .

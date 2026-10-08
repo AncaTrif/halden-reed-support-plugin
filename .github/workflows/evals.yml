@@ -1,0 +1,48 @@
+# Paid eval run. Manual only, because it bills model tokens to the ANTHROPIC_API_KEY secret.
+# Workflows started by pull requests from forks never receive repository secrets, and this one
+# cannot be started by a pull request at all.
+name: evals (manual, costs API credits)
+on:
+  workflow_dispatch:
+    inputs:
+      runs:
+        description: "Runs per case"
+        default: "1"
+      max_cost_usd:
+        description: "Hard cost ceiling in USD"
+        default: "3"
+      model:
+        description: "Model for the agent under test"
+        default: "claude-sonnet-5-5"
+      judge_model:
+        description: "Model for judge graders"
+        default: "claude-haiku-4-5-20251001"
+permissions:
+  contents: read
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Run the eval suite
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RUNS: ${{ inputs.runs }}
+          MAX_COST: ${{ inputs.max_cost_usd }}
+          MODEL: ${{ inputs.model }}
+          JUDGE_MODEL: ${{ inputs.judge_model }}
+        run: |
+          claude plugin eval . --trust-plugin --ablation none --allow-tools Write \
+            --runs "$RUNS" --max-cost-usd "$MAX_COST" --model "$MODEL" --judge-model "$JUDGE_MODEL" \
+            --threshold 0.8 --no-publish --json results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: results.json
