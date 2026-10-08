@@ -89,5 +89,5 @@ For each of HR-1001 (safety), HR-1003 (chargeback, no customer reply), HR-1005 (
 
 - `.github/workflows/checks.yml` runs on every pull request and on pushes to `main`. It is free: the hook tests, the orders server tests, `build_evals.py --check` and `claude plugin validate .`.
 - `.github/workflows/evals.yml` runs the paid suite. It can only be started by hand, uses an `ANTHROPIC_API_KEY` repository secret, and uploads `results.json`. A pull request cannot start it, and workflows from forks never receive secrets.
-- Neither workflow has been run on GitHub yet, and the install of the Claude Code CLI in them is untested.
+- `checks.yml` has run on GitHub and passed: the hook tests, the orders server tests, the eval files check, the CLI install and the plugin validation. `evals.yml` has not been run, because it bills model tokens.
 - Policy changes go through a pull request. Before merging one, start the eval workflow by hand and read the result.
