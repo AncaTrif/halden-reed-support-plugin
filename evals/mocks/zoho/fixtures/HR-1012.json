@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001012",
+        "ticketNumber": "112",
+        "subject": "[HR-1012] Final notice before I file in small claims",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91012",
+        "contact": {
+          "firstName": "Rachel",
+          "lastName": "Stone",
+          "email": "rachel.stone@example.org"
+        },
+        "description": "Market: US\nLanguage: en\nOrder: HR-US-90144\nReceived: 2026-09-19T14:02:00Z\nSource channel: email\n\nTo whom it may concern,\n\nMy Halden & Reed stand mixer stopped working after 14 months. Your warranty page says 24 months, but I was told by your agent that the motor is \"not covered\". I have now been refused a repair or replacement twice.\n\nIf I do not receive a replacement within 10 days, I will file a claim in small claims court and I will also post the full email exchange on social media. My attorney friend has told me your warranty wording is misleading.\n\nRachel Stone"
+      }
+    ],
+    "count": 1
+  }
+}

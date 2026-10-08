@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001004",
+        "ticketNumber": "104",
+        "subject": "[HR-1004] Löschung meiner personenbezogenen Daten (Art. 17 DSGVO)",
+        "channel": "Email",
+        "status": "Open",
+        "language": "German",
+        "contactId": "91004",
+        "contact": {
+          "firstName": "Mira",
+          "lastName": "Vogel",
+          "email": "mira.vogel@example.org"
+        },
+        "description": "Market: DE\nLanguage: de\nOrder: HR-DE-77455\nReceived: 2026-09-15T10:22:00Z\nSource channel: email\n\nSehr geehrte Damen und Herren,\n\nhiermit fordere ich gemäß Art. 17 DSGVO die vollständige Löschung aller zu meiner Person gespeicherten Daten, einschließlich Kundenkonto, Bestellhistorie, Newsletter-Daten und Support-Korrespondenz.\n\nBitte bestätigen Sie mir die Löschung schriftlich. Sollte ich innerhalb der gesetzlichen Frist keine Antwort erhalten, werde ich mich an die zuständige Datenschutzaufsichtsbehörde wenden.\n\nMira Vogel"
+      }
+    ],
+    "count": 1
+  }
+}

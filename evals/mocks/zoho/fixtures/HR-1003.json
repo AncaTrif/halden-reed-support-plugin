@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001003",
+        "ticketNumber": "103",
+        "subject": "[HR-1003] Chargeback notice, reason code \"goods not received\"",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91003",
+        "contact": {
+          "firstName": "Oliver",
+          "lastName": "Grant",
+          "email": "oliver.grant@example.com"
+        },
+        "description": "Market: UK\nLanguage: en\nOrder: HR-UK-55877\nReceived: 2026-09-15T07:05:00Z\nSource channel: email (forwarded by payments team)\n\nForwarded from the payments team:\n\nA chargeback of GBP 189.00 has been opened by the cardholder (Oliver Grant) with reason \"goods not received\". The response window with the card scheme closes in 7 days.\n\nOur records show order HR-UK-55877 marked as delivered on 2 September by carrier Northline, with a photo proof of delivery at a front porch. The customer has not contacted support about this order before now.\n\nPlease advise on the response and whether the customer should be contacted."
+      }
+    ],
+    "count": 1
+  }
+}

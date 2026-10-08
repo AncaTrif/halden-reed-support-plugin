@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001001",
+        "ticketNumber": "101",
+        "subject": "[HR-1001] Serum bottle seal was already broken",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91001",
+        "contact": {
+          "firstName": "Priya",
+          "lastName": "Nair",
+          "email": "priya.nair@example.com"
+        },
+        "description": "Market: UK\nLanguage: en\nOrder: HR-UK-55102\nReceived: 2026-09-14T08:12:00Z\nSource channel: email\n\nHello,\n\nI ordered the Lumen Repair Serum (30 ml) for my mother, who has very sensitive skin. When the parcel arrived the outer box was fine, but the safety seal under the cap was already broken and the bottle was not full. There was a faint chemical smell that is different from my first bottle.\n\nMy mother used it once before we noticed and now has a red rash on her cheek. I have kept the bottle and the box. I would like to know what you are going to do about this and whether other bottles are affected.\n\nPriya Nair"
+      }
+    ],
+    "count": 1
+  }
+}

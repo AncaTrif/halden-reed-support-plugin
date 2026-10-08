@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001010",
+        "ticketNumber": "110",
+        "subject": "[HR-1010] Change delivery address",
+        "channel": "Email",
+        "status": "Open",
+        "language": "English",
+        "contactId": "91010",
+        "contact": {
+          "firstName": "Grace",
+          "lastName": "Liu",
+          "email": "grace.liu@example.com"
+        },
+        "description": "Market: UK\nLanguage: en\nOrder: HR-UK-55921\nReceived: 2026-09-18T09:05:00Z\nSource channel: chat\n\nHi, I placed an order an hour ago (HR-UK-55921) and just realised I entered my old address. Can you change it to 14 Mill Lane, Leeds LS1 4AB? The order has not shipped yet according to my confirmation email.\n\nThanks!"
+      }
+    ],
+    "count": 1
+  }
+}

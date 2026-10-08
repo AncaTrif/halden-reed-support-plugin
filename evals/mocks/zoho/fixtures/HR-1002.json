@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": {
+    "data": [
+      {
+        "id": "24822500001002",
+        "ticketNumber": "102",
+        "subject": "[HR-1002] Rückgabe Wasserkocher nach Fristablauf",
+        "channel": "Email",
+        "status": "Open",
+        "language": "German",
+        "contactId": "91002",
+        "contact": {
+          "firstName": "Jonas",
+          "lastName": "Keller",
+          "email": "jonas.keller@example.org"
+        },
+        "description": "Market: DE\nLanguage: de\nOrder: HR-DE-77310\nReceived: 2026-09-14T09:40:00Z\nSource channel: web form\n\nGuten Tag,\n\nich habe am 4. August den Wasserkocher Aura 1.7 bestellt und möchte ihn zurückgeben. Ich weiß, dass die Frist abgelaufen ist (heute ist der 14. September), aber ich war im Urlaub und hatte keine Zeit, das Paket zu öffnen. Der Kocher ist unbenutzt und originalverpackt.\n\nIch hoffe, Sie können eine Ausnahme machen. Ich bin seit Jahren Kunde bei Ihnen.\n\nMit freundlichen Grüßen\nJonas Keller"
+      }
+    ],
+    "count": 1
+  }
+}
