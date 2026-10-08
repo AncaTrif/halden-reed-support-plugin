@@ -35,7 +35,7 @@ It is a portfolio build that shows, in one place:
 commands/       /triage-ticket and /draft-reply
 agents/         drafter and reviewer subagents
 skills/         triage skill
-.mcp.json       orders MCP server, started by scripts/run_orders_server.sh
+mcp/            orders MCP server config for the plugin (started by scripts/run_orders_server.sh)
 tickets/        12 seeded tickets (markdown with front matter)
 evals/          expected outcomes per ticket, used by the eval harness later
 docs/           setup guides
