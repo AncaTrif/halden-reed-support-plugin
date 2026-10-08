@@ -20,6 +20,8 @@ claude plugin install halden-reed-desk@halden-reed --scope local
 
 Or inside Claude Code: `/plugin marketplace add <path or repo>`, then `/plugin install halden-reed-desk@halden-reed`. Restart Claude Code afterwards. Scope `local` keeps it to the current project, `user` makes it global.
 
+A marketplace name is global. Adding `halden-reed` from a new source (a branch, a fork, a local folder) re-points it for every project on your machine, and plugins already installed from it update from the new source. To go back, add the previous source again. For a branch, use `AncaTrif/halden-reed-support-plugin#<branch>`.
+
 Commands and agents get the plugin name as a prefix:
 
 | What | Name |
