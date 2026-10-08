@@ -82,7 +82,7 @@ For each of HR-1001 (safety), HR-1003 (chargeback, no customer reply), HR-1005 (
 
 ## Risks the draft cases would test
 
-- The agents and the triage skill read `policy/` and `cases/` by relative path. In a run, the working folder is empty, so those reads may fail. The same may apply to an installed plugin used in another folder. The triage case does not touch `policy/`, so this is unverified.
+- Plugin-owned files: the drafter and reviewer read `policy/` through `${CLAUDE_PLUGIN_ROOT}`, so they work from any folder. A headless check from an empty folder confirmed both policy reads succeed. Case files and drafts are output in the user's project and are read and written by relative path. The drafter was checked before the file-name wording was tightened and the reviewer after it.
 - The reviewer is a second model pass and not a guarantee.
 
 ## CI
